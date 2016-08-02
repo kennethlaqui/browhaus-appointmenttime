@@ -92,7 +92,7 @@
 		<fieldset>
 				<div class="form-top">
 					<div class="form-top-left">
-						<h3>Strip Appointment Time</h3>
+						<h3>Browhaus Appointment Time</h3>
 					</div>
 					<div class="form-top-right">
 						<i class="fa fa-user"></i>
