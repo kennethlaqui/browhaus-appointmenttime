@@ -112,7 +112,7 @@
 				<input type="text" maxlength="11" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
 				</div>
 				<div class="form-group">
-					<input type="text" maxlength="8" class="form-control" id="telno" name="telno" placeholder="Tel. Number" required>
+					<input type="text" maxlength="10" class="form-control" id="telno" name="telno" placeholder="Tel. Number" required>
 				</div>		
 				<div class="form-group">
 					<select id="getlocation" name="getlocation" class="form-control">
