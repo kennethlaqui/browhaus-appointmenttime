@@ -50,6 +50,7 @@
 	$apnttime = $_POST["stdtime"];
 	date_default_timezone_set('Asia/Manila');
 	$today = date("m.d.y");
+	$logtime = date("h:i:s A");
 	$branch = $_POST["getlocation"];
 	$msg = $_POST["msg"];
 	$valstd = $_POST["con_mil"];
@@ -65,8 +66,9 @@
 										 locn_cde,
 										 message_,
 										 cntrl_no,
-										 mil_time)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";  
+										 mil_time,
+										 log_time)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";  
 	$withparam = array($name, 
 					   $email, 
 					   $mobnum, 
@@ -79,7 +81,8 @@
 					   $branch,
 					   $msg,
 					   $cntrlno,
-					   $valstd);
+					   $valstd,
+					   $logtime);
 	$result = sqlsrv_query($conn, $tsql, $withparam);
 	if( $result === false )  
 	{  
