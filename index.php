@@ -52,11 +52,11 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<span class="li-text">
-								Put some text or
+								Follow us on
 							</span> 
-							<a href="#"><strong>links</strong></a> 
+							<a href="#"><strong></strong></a> 
 							<span class="li-text">
-								here, or some icons: 
+								 
 							</span> 
 							<span class="li-social">
 								<a href="#"><i class="fa fa-facebook"></i></a> 
@@ -106,13 +106,13 @@
 					<input type="text" maxlength="30" class="form-control" id="name" name="name" placeholder="Name" required>
 				</div>
 				<div class="form-group">
-					<input type="text" maxlength="30" class="form-control" id="email" name="email" placeholder="Email" required>
+					<input type="text" maxlength="30" class="form-control" id="email" name="email" placeholder="Email">
 				</div>	
 				<div class="form-group">
 				<input type="text" maxlength="11" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
 				</div>
 				<div class="form-group">
-					<input type="text" maxlength="10" class="form-control" id="telno" name="telno" placeholder="Tel. Number" required>
+					<input type="text" maxlength="10" class="form-control" id="telno" name="telno" placeholder="Tel. Number">
 				</div>		
 				<div class="form-group">
 					<select id="getlocation" name="getlocation" class="form-control">
@@ -186,7 +186,7 @@
 					<input type="text" maxlength="20" class="form-control" id="treatment" name="treatment" placeholder="Treatment">
 				</div>
 				<div class="form-group">
-					<input type="text" id="apntdate" name="apntdate" class="form-control" placeholder="Appointment Date">
+					<input type="text" id="apntdate" name="apntdate" class="form-control" placeholder="Appointment Date" required>
 				</div>
 				<div id="form-group" >
 				<!-- get the value of this -->
@@ -297,6 +297,20 @@
 					});
 				</script>
 				
+				<script type="text/javascript">
+				//validation - if user click submit button, execute again this function
+					$(document).ready(function(){
+						$('#con_mil').hide();
+						$('#stdtime').hide();
+						$('#submit').on('click', function(){
+						var valstd = $('#getstd').val();
+						var valoption = $( "select#getstd option:selected").text();
+						document.getElementById('con_mil').value = valstd;	
+						document.getElementById('stdtime').value = valoption;	
+						});
+					});
+				</script>
+				
 				
 			<div class ="form-group">
 				</div>
@@ -304,7 +318,7 @@
 				<textarea class="form-control" type="textarea" id="msg" name="msg" placeholder="Message" maxlength="140" rows="7"></textarea>
 					<span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
 				</div>
-				<button type="submit" id="submit" name="register" value="register" class="btn btn-primary btn-next">Submit</button>
+				<button type="submit" id="submit" name="register" value="register" class="btn btn-primary btn-submit">Submit</button>
 				</div>
 		</fieldset>
 		</form>
@@ -339,7 +353,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Author <?php echo date("Y"); ?> V2
+                    Copyright &copy; Author <?php echo date("Y"); ?>
                 </div>
             </div>
         </div>
