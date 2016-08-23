@@ -5,10 +5,14 @@
 	if(isset($_POST['register']))
 	{
 		
-	$serverName = "appointmentsrv.database.windows.net";
+	
 	//$serverName = "LAQUI\SQLEXPRESS";
+	
+	//harem cloud
+	$serverName = "haremcloud.database.windows.net";
 	$connectionOptions = array("Database"=>"DBAppointment", 
-	"Uid"=>"kennethlaqui", "PWD"=>"mAsterkkl082695");
+	"Uid"=>"rod", "PWD"=>"1bengzaba@vli");
+	//"Uid"=>"kennethlaqui", "PWD"=>"mAsterkkl082695");
 	//"Uid"=>"vlilocalsql", "PWD"=>"mAsterkkl082695");
 	
 	$conn = sqlsrv_connect($serverName, $connectionOptions);
