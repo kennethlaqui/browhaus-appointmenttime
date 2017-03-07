@@ -59,7 +59,7 @@
 								 
 							</span> 
 							<span class="li-social">
-								<a href="#"><i class="fa fa-facebook"></i></a> 
+								<a href="https://www.facebook.com/BrowhausManila/" target="_blank"><i class="fa fa-facebook"></i></a> 
 								<a href="#"><i class="fa fa-twitter"></i></a> 
 								<a href="#"><i class="fa fa-envelope"></i></a> 
 								<a href="#"><i class="fa fa-skype"></i></a>
