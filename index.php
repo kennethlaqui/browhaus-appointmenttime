@@ -52,7 +52,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<span class="li-text">
-								Follow us on
+								Visit us on
 							</span> 
 							<a href="#"><strong></strong></a> 
 							<span class="li-text">
